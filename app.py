@@ -2,17 +2,10 @@ import os
 import streamlit as st
 import whisper
 
-import warnings
 
-
-warnings.filterwarnings(
-    "ignore",
-    message="You are using `torch.load` with `weights_only=False`",
-    category=FutureWarning
-)
 
 # Load the Whisper model once at startup (choose your preferred model size)
-model = whisper.load_model("turbo")
+model = whisper.load_model("small")
 
 def main():
     st.title("Transcripcion de audio para albita")
