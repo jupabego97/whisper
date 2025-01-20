@@ -5,7 +5,7 @@ import whisper
 
 
 # Load the Whisper model once at startup (choose your preferred model size)
-model = whisper.load_model("small")
+model = whisper.load_model("base")
 
 def main():
     st.title("Transcripcion de audio para albita")
@@ -26,7 +26,7 @@ def main():
         transcription = result["text"]
 
         # Display the transcription
-        st.success("Transcription:")
+        st.success("transcripcion:")
         st.write(transcription)
 
         # Optionally remove the temporary file
