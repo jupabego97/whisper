@@ -3,7 +3,7 @@ import streamlit as st
 import whisper
 
 # Load the Whisper model once at startup (choose your preferred model size)
-model = whisper.load_model("base")
+model = whisper.load_model("turbo")
 
 def main():
     st.title("Transcripcion de audio para albita")
